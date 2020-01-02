@@ -12,7 +12,7 @@ loginBtn.addEventListener('click',function(){
   firebase.auth().signInWithEmailAndPassword(email,pw).then(function(){
         console.log('success');
         
-        window.location.replace("index.html");
+        window.location.replace("app.html"); //test new html
     }).catch(function(error){
         console.log(error);
     });
