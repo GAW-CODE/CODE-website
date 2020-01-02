@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link href = "css/login.css" rel ="stylesheet" type = "text/css">
+    
      <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
     <script defer src="https://www.gstatic.com/firebasejs/6.6.1/firebase.js"></script>
     <script defer src="/__/firebase/6.3.1/firebase-app.js"></script>
@@ -19,7 +19,29 @@
     <script defer src = "js/login.js"></script>
 </head>
 <body>
-    
+    <form>
+        <input placeholder  ="Email Address" id="signUpEmail"><br>
+        <input placeholder = "Password" type = "password" id="signUpPw"><br>
 
+
+        <button  id="signUpBtn">
+          Register!
+        </button>
+        <h5 class = "wrongPage">
+           Already have an account? <span class = "switch">Sign In</span>
+        </h5>
+      </form>
+
+      <form>
+        <input placeholder = "Username" id="loginEmail"><br>
+        <input placeholder = "Password" type = "password" id="loginPw"><br>
+
+        <button id="loginBtn" type = "button">
+          Login!
+        </button>
+        <h5 class = "wrongPage">
+           Don't have an account? <span class = "switch">Sign Up!</span>
+        </h5>
+      </form>
 </body>
 </html>
