@@ -1,0 +1,40 @@
+#Modal{
+  margin-top: 13vh;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  border: 5px solid black;
+  text-align: center;
+  font-size: 32px;
+}
+#Modal input{
+  font-size: 32px;
+  margin-bottom: 4vh;
+}
+#signUp{
+  display: none;
+}
+#login{
+  display: inline-block;
+}
+#signUpTab{
+  background-color: grey;
+  height: 100%;
+  width: 50%;
+}
+#loginTab{
+  background-color:white;
+  height: 100%;
+  width: 50%;
+}
+#loginTab h2{
+  float: left;
+  margin-left: 5vw;
+}
+#signUpTab h2{
+  float: right;
+  margin-right: 5vw;
+}
+#tabbing{
+  height: 10vh;
+}
