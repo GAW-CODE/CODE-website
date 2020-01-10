@@ -38,3 +38,9 @@
 #tabbing{
   height: 10vh;
 }
+.offTab{
+  color: #666;
+}
+.onTab{
+  color: black;
+}
