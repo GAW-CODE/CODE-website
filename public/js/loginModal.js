@@ -1,27 +1,23 @@
-var x = document.getElementbyId("signUpTab");
-var y=document.getElementById("loginTab");
-x.addEventListener("click", ()=>{
-  switchTab();
+
+document.getElementById("signUpTab").addEventListener("click", ()=>{
+  switchTab(true);
 });
-y.addEventListener("click", ()=>{
-  switchTab();
+document.getElementById("loginTab").addEventListener("click", ()=>{
+  switchTab(false);
 })
-var onLog = true;
-function switchtab(){
-    if(onLog){
-         x.style.display = "inline-block";
-        y.style.display = "none";
-        document.getElementById("signUp").backgroundColor = "white";
-        document.getElementById("loginT").backgroundColor = "#666";
-        x.style.backgroundColor  = "white";
-        y.style.backgroundColor = "#666";
+function switchTab(t){
+    if(t){
+      document.getElementById("signUp").style.display = "none";
+      document.getElementById("login").style.display = "inline-block";
+      document.getElementById("signUpTab").className = "onTab";
+      document.getElementById("loginTab").className = "offTab";
+      document.getElementById("temp").innerHTML = "on signUp";
     }else{
-        x.style.display = "none";
-        y.style.display = "inline-block";
-        document.getElementById("signUp").backgroundColor = "#666";
-        document.getElementById("loginT").backgroundColor = "white";
-        x.style.backgroundColor  = "#666";
-        y.style.backgroundColor = "white";
+
+        document.getElementById("signUp").style.display = "inline-block";
+        document.getElementById("login").style.display = "none";
+        document.getElementById("signUpTab").className = "offTab";
+        document.getElementById("loginTab").className = "onTab";
+        document.getElementById("temp").innerHTML = "on Login";
     }
-    onLog = !onLog;
 }
