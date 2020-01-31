@@ -28,20 +28,233 @@
 
     <button id="save">save</button>
 
-    <!--https://www.w3schools.com/html/html_forms.asp-->
-    <form class = "application" id="1">
-            <p id = "intro">
-              Apply to the CODE team here by completing the following. Please enter all information honestly, and set aside 30-60 minutes to finish your application.
-            </p>
-            <p>Name</p>
-            <input type ="text" placeholder="enter your name..."> <br>
-            <p>
-              <p>birthday</p>
-            <input type ="text" placeholder="enter your birthday..."> <br>
-            <p>Grade</p>
-            <input type ="text" placeholder="enter your grade level..."> <br>         
-            </p>
-      </form>
+    <!--https://www.w3schools.com/html/html_forms.asp--> 
+    <div class="topnavbar">
+      <ul>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Events</a></li>
+        <li><a href="">Sign Up</a></li>
+      </ul>
+       </div>
+       <div  id = "whole-thing" class = "application" data-ride="carousel">
+         <div class = "application" id = "1">
+             <form class = "application" id="1">
+               <p id = "intro">
+                 Apply to the CODE team here by completing the following. Please enter all information honestly, and set aside 30-60 minutes to finish your application.
+               </p>
+               <p>Name</p>
+               <input type ="text" placeholder="enter your name..."> <br>
+               <p>
+                 <p>birthday</p>
+               <input type ="text" placeholder="enter your birthday..."> <br>
+               <p>Grade</p>
+               <input type ="text" placeholder="enter your grade level..."> <br>         
+               </p>
+         </form>
+          </div>
+       <div class = "bubbles">
+         <div class = "bubble" id = "1A"></div>
+         <div class = "bubble" id = "1b"></div>
+         <div class = "bubble" id = "1c"></div>
+         <div class = "bubble" id = "1d"></div>
+         <div class = "bubble" id = "1e"></div>
+         <div class = "bubble" id = "1f"></div>
+         <div class = "bubble" id = "1g"></div>
+         <div class = "bubble" id = "1h"></div>
+         <div class = "bubble" id = "1i"></div>
+       </div>
+       
+         <form class ="application" id="2">
+           <p>Enter the classes you plan to take in the next school year. Indicate that they are Honors, A.P., or I.B. when applicable  </p>
+           <input type="text" placeholder="enter here..."> <br>
+           <button type = "submit">Submit</button>
+           <p id = "classes-displayed"></p>
+              <div class = "bubbles">
+         <div class = "bubble d" id = "2A"></div>
+         <div class = "bubble" id = "2b"></div>
+         <div class = "bubble " id = "2c"></div>
+         <div class = "bubble" id = "2d"></div>
+         <div class = "bubble" id = "2e"></div>
+         <div class = "bubble" id = "2f"></div>
+         <div class = "bubble" id = "2g"></div>
+         <div class = "bubble" id = "2h"></div>
+         <div class = "bubble" id = "2i"></div>
+       </div>
+         </form>
+           <form class="application" id="3">
+             <p>Please enter all extracurricular activites you plan on participating in in the next school year.</p>
+               <div id="activity-adder">
+                 <input type="text" placeholder ="enter activity"> <br>
+                 <p>Hours per week:
+                 <select>
+                   <option value = "<1">Less than 1</option>
+                   <option value = "1-2">1-2</option>
+                   <option value = "2-3">2-3</option>
+                   <option value = "3-4">3-4</option>
+                   <option value = "4-5">4-5</option>
+                   <option value = "5+"> More than 5</option>
+                   </select> </p><br>
+                   <p>Meeting day(s)
+                     <input type="checkbox" name ="day" value = "Monday"> Monday
+                     <input type= "checkbox" name = "day" value = "Tuesday"> Tuesday
+                     <input type= "checkbox" name ="day" value = "Wednesday"> Wednesday
+                     <input type= "checkbox" name = "day" value = "Thursday"> Thursday
+                    <input type= "checkbox" name = "day" value = "Friday"> Friday
+                     <input type= "checkbox" name = "day" value = "Saturday"> Saturday
+                     <input type= "checkbox" name = "day" value = "Sunday"> Sunday
+                 </p><br>
+                 <p>Months Active
+                   <input type="checkbox" name = "month" value = "January"> January
+                   <input type = "checkbox" name = "month" value = "Febuary"> Febuary
+                   <input type = "checkbox" name = "month" value = "March"> March
+                   <input type = "checkbox" name = "month" value = "April"> April
+                   <input type = "checkbox" name = "month" value = "May"> May
+                   <input type = "checkbox" name = "month" value = "June"> June
+                   <input type = "checkbox" name = "month" value = "July"> July
+                   <input type = "checkbox" name = "month" value = "August"> August
+                   <input type = "checkbox" name = "month" value = "September"> September
+                   <input type = "checkbox" name = "month" value = "October"> October
+                   <input type = "checkbox" name = "month" value = "November"> November
+                   <input type = "checkbox" name = "month" value = "December"> December
+                         </p> <br>
+                  <p>Most Intense Months
+                   <input type="checkbox" name = "month" value = "January"> January
+                   <input type = "checkbox" name = "month" value = "Febuary"> Febuary
+                   <input type = "checkbox" name = "month" value = "March"> March
+                   <input type = "checkbox" name = "month" value = "April"> April
+                   <input type = "checkbox" name = "month" value = "May"> May
+                   <input type = "checkbox" name = "month" value = "June"> June
+                   <input type = "checkbox" name = "month" value = "July"> July
+                   <input type = "checkbox" name = "month" value = "August"> August
+                   <input type = "checkbox" name = "month" value = "September"> September
+                   <input type = "checkbox" name = "month" value = "October"> October
+                   <input type = "checkbox" name = "month" value = "November"> November
+                   <input type = "checkbox" name = "month" value = "December"> December
+                         </p> <br>
+             <button type="button">Add an Activity!</button>
+             </div>
+             <div class = "bubbles">
+         <div class = "bubble d" id = "3A"></div>
+         <div class = "bubble d" id = "3b"></div>
+         <div class = "bubble" id = "3c"></div>
+         <div class = "bubble" id = "3d"></div>
+         <div class = "bubble" id = "3e"></div>
+         <div class = "bubble" id = "3f"></div>
+         <div class = "bubble" id = "3g"></div>
+         <div class = "bubble" id = "3h"></div>
+         <div class = "bubble" id = "3i"></div>
+         <div class = "bubble" id = "3j"></div>
+       </div>
+         </form>
+             <form class ="application" id="4">
+               <p>Question 1: Where did you learn to code? Note: BASIC coding experience is required to tryout</p>
+               <input  class = "frq" type ="text" placeholder ="I learned to code at..."> <br>
+                  <div class = "bubbles">
+         <div class = "bubble d" id = "4A"></div>
+         <div class = "bubble d" id = "4b"></div>
+         <div class = "bubble d" id = "4c"></div>
+         <div class = "bubble" id = "4d"></div>
+         <div class = "bubble" id = "4e"></div>
+         <div class = "bubble" id = "4f"></div>
+         <div class = "bubble" id = "4g"></div>
+         <div class = "bubble" id = "4h"></div>
+         <div class = "bubble" id = "4i"></div>
+       </div>
+       </form>
+       <form class ="application" id="5">
+         <p>Explain why you’re interested in CODE. What do you hope to gain from being in CODE? </p>
+         <input class = "frq" type ="text" placeholder ="I am interested in CODE because..."> <br>
+            <div class = "bubbles">
+         <div class = "bubble d" id = "5A"></div>
+         <div class = "bubble d" id = "5b"></div>
+         <div class = "bubble d" id = "5c"></div>
+         <div class = "bubble d" id = "5d"></div>
+         <div class = "bubble" id = "5e"></div>
+         <div class = "bubble" id = "5f"></div>
+         <div class = "bubble" id = "5g"></div>
+         <div class = "bubble" id = "5h"></div>
+         <div class = "bubble" id = "5i"></div>
+       
+       </div>
+       </form>
+       <form class="application" id="6">
+         <p>What committee(s) would you be interested in if you were accepted to CODE</p>
+         <input type="checkbox" name ="committee" value = "Front-End"> Front End <br>
+        <input type="checkbox" name ="committee" value ="Back-End"> Back End <br>
+         <input type = "checkbox" name ="committee" value ="Media"> Media <br>
+                <div class = "bubbles">
+         <div class = "bubble d" id = "6A"></div>
+         <div class = "bubble d" id = "6b"></div>
+         <div class = "bubble d" id = "6c"></div>
+         <div class = "bubble d" id = "6d"></div>
+         <div class = "bubble d" id = "6e"></div>
+         <div class = "bubble" id = "6f"></div>
+         <div class = "bubble" id = "6g"></div>
+         <div class = "bubble" id = "6h"></div>
+         <div class = "bubble" id = "6i"></div>
+       </div>                                           
+       </form>
+        <form class ="application" id="7">
+           <p>Besides coding skills, what are 3 things you can contribute to the team? These can be skills, character traits, etc. Provide evidence (e.g. past experiences) to support your claims.</p>
+           <input  class="frq" type="text" placeholder="enter here..."> <br>
+             <div class = "bubbles">
+         <div class = "bubble d" id = "7A"></div>
+         <div class = "bubble d" id = "7b"></div>
+         <div class = "bubble d" id = "7c"></div>
+         <div class = "bubble d" id = "7d"></div>
+         <div class = "bubble d" id = "7e"></div>
+         <div class = "bubble d" id = "7f"></div>
+         <div class = "bubble" id = "7g"></div>
+         <div class = "bubble" id = "7h"></div>
+         <div class = "bubble" id = "7i"></div>
+       </div>
+         </form>
+         <div class ="application" id="8">
+          <form>
+         <p>(Optional): Attach links, attach code, or send a video of a website/program that you’ve made to show examples of your coding / media work. </p>
+         <input  class = "frq" type ="text" placeholder ="paste link here..."> <br>
+               <div class = "bubbles">
+         <div class = "bubble d" id = "8A"></div>
+         <div class = "bubble d" id = "8b"></div>
+         <div class = "bubble d" id = "8c"></div>
+         <div class = "bubble d" id = "8d"></div>
+         <div class = "bubble d" id = "8e"></div>
+         <div class = "bubble d" id = "8f"></div>
+         <div class = "bubble d" id = "8g"></div>
+         <div class = "bubble" id = "8h"></div>
+         <div class = "bubble" id = "8i"></div>
+       </div>
+       </form>
+       </div>
+         <form class ="application" id="9">
+           <p>Besides coding skills, what are 3 things you can contribute to the team? These can be skills, character traits, etc. Provide evidence (e.g. past experiences) to support your claims.</p>
+           <input type="text" class="frq" placeholder="enter here..."> <br>
+              <div class = "bubbles">
+         <div class = "bubble d" id = "9A"></div>
+         <div class = "bubble d" id = "9b"></div>
+         <div class = "bubble d" id = "9c"></div>
+         <div class = "bubble d" id = "9d"></div>
+         <div class = "bubble d" id = "9e"></div>
+         <div class = "bubble d" id = "9f"></div>
+         <div class = "bubble d" id = "9g"></div>
+         <div class = "bubble d" id = "9h"></div>
+         <div class = "bubble" id = "9i"></div>
+       </div>
+         </form>
+       <form class ="application" id="10">
+           <p>Do you have any questions?</p>
+           <input type="text" class="frq" placeholder="ask us anything..."> <br>
+            <div class = "bubbles">
+         <div class = "bubble d" id = "10A"></div>
+         <div class = "bubble d" id = "10b"></div>
+         <div class = "bubble d" id = "10c"></div>
+         <div class = "bubble d" id = "10d"></div>
+         <div class = "bubble d" id = "10e"></div>
+         <div class = "bubble d" id = "10f"></div>
+         <div class = "bubble d" id = "10g"></div>
+         <div class = "bubble d" id = "10h"></div>
+         <div class = "bubble d" id = "10i"></div>
+       </div>
 
       
   </body>
