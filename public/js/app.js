@@ -23,7 +23,7 @@ function save(){
         formSubmission.birthday=section1.elements[1].value;
         formSubmission.grade=section1.elements[2].value;
     }
-    
+
     
     db.ref(`Application/${curYear}/${section1.elements[0].value}`).set(formSubmission)
 
