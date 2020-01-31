@@ -17,7 +17,7 @@ function save(){
     })
     */
     let formSubmission={}; //final object with all questions 
-    let section1=document.getElementById("1"); 
+    let section1=document.getElementById("q1"); 
 
     if(section1.elements.length==3){ //Section 1 Requirements 
         formSubmission.birthday=section1.elements[1].value;
@@ -25,7 +25,7 @@ function save(){
     }
 
     
-    db.ref(`Application/${curYear}/${section1.elements[0].value}`).set(formSubmission)
+    db.ref(`applications/${curYear}/${section1.elements[0].value}`).set(formSubmission)
 
 
 
