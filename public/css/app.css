@@ -13,7 +13,7 @@
     overflow: hidden;
     position: fixed;
     bottom: 0;
-    width 100%;
+    width: 100%;
   }
   
   
@@ -27,7 +27,6 @@
   }
   li {
     display: inline;
-    float: right; 
     }
   li a {
     position: relative;
@@ -49,9 +48,7 @@
     font-size: 2em;
     margin-top: 5px;
   }
-  #1{
-    font-size: 24em;
-  }
+  
   #activity-adder {
     border: 0.8vh solid #697DE7;
       padding: 7%;
