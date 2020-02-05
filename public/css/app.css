@@ -1,5 +1,85 @@
-#save{
-    position: absolute;
-    right: 0;
+*{
+    margin: 0;
+    padding: 0;
+  }
+  body {
+     font-family: "Didact Gothic";
+     font-weight: normal;
+     font-style: normal;
+    margin: 2em;
+  }
+  
+  topnavbar{
+    overflow: hidden;
+    position: fixed;
     bottom: 0;
-}
+    width: 100%;
+  }
+  
+  
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #697DE7;
+  }
+  li {
+    display: inline;
+    }
+  li a {
+    position: relative;
+    margin-top: 0%;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1.25em 2em;
+    background-color: #697DE7;
+    text-decoration: none;
+    
+  }
+  .application {
+    text-align: center;
+    padding: 70px 70px;
+    margin-top : 0.0000000000001px; 
+  }
+  #intro{
+    font-size: 2em;
+    margin-top: 5px;
+  }
+  
+  #activity-adder {
+    border: 0.8vh solid #697DE7;
+      padding: 7%;
+    margin-top: 10%;
+  }
+  #classes-displayed {
+    text-align:center;
+    border: 3px solid #697DE7;
+    padding: 7px;
+    margin-top: 10px;
+    height: 30vh;
+    width: 150vh;
+  }
+  .frq{
+    border: 3px solid #697DE7;
+    border-radius: 1%;
+    padding: 7%;
+    margin-top: 10%;
+    height: 30vh;
+    width: 100vh;
+  }
+  .bubble{
+    height: 2.5vh;
+    width: 2.5vh;
+    border-radius: 50%;
+    display: inline-block;
+    border: 0.1vw solid black;
+    background-color:#d3d3d3;
+    margin: 1%;
+    
+  }
+  .d {
+    background-color: #2b2D2F;
+  }
