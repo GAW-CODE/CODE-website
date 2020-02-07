@@ -17,18 +17,24 @@ function save(){
     })
     */
     let formSubmission={}; //final object with all questions 
-    let section1=document.getElementById("q1"); 
+    let section1=document.getElementById("1");
+    let section4=document.getElementById("4");
+    console.log(section4.elements.length)
+ 
+   
 
-    if(section1.elements.length==3){ //Section 1 Requirements 
+    if(section1.elements.length==3){ //Section 1 Requirements
         formSubmission.birthday=section1.elements[1].value;
         formSubmission.grade=section1.elements[2].value;
+        if(section4.elements.length==1){
+        
+            formSubmission.FRQ1=section4.elements[0].value;
+        }
     }
-
+    
+  
     
     db.ref(`applications/${curYear}/${section1.elements[0].value}`).set(formSubmission)
-
-
-
 }
 
 
