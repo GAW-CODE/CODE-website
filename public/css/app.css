@@ -3,7 +3,7 @@
     padding: 0;
   }
   body {
-     font-family: "Didact Gothic";
+     font-family: Didact Gothic;
      font-weight: normal;
      font-style: normal;
     margin: 2em;
@@ -55,9 +55,9 @@
       padding: 7%;
     margin-top: 10%;
   }
-  #classes-displayed {
-    text-align:center;
-    border: 3px solid #697DE7;
+  #class-selection {
+    text-align:cen
+    border: 3px solid #6
     padding: 7px;
     margin-top: 10px;
     height: 30vh;
@@ -83,4 +83,7 @@
   }
   .d {
     background-color: #2b2D2F;
+  }
+  .clazz{
+
   }
