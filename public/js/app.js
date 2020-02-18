@@ -29,20 +29,7 @@ function save(){
     console.log(formSubmission)
     db.ref(`applications/${curYear}/${section1.elements[0].value}`).set(formSubmission)
 }
-document.getElementById("new").addEventListener('keypress', function (e) {
-    if (e.key === 'Enter') {
-      let html = `<div class = "note">
-        <input class="check" type="checkbox">
-        ${document.getElementById("new").value}
-        <button onclick="destroy()" class="delete">delete</button>
-      </div> `
-      document.getElementById("container").innerHTML += html;
-    }
- });
- 
- function destroy(btn){
-  btn.parentElement.remove();
- }
+
 
 
 
