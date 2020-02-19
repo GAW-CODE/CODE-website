@@ -46,7 +46,7 @@
                <input type ="text" placeholder="enter your name..."> <br>
                <p>
                  <p id="1_1">birthday</p>
-               <input type ="text" placeholder="enter your birthday..."> <br>
+                 <input type="date" value="2017-06-01">
                <p id="1_2">Grade</p>
                <input type ="text" placeholder="enter your grade level..."> <br>         
                </p>
@@ -81,9 +81,17 @@
          <div class = "bubble" id = "2i"></div>
        </div>
          </form>
+
+         <div id="activity-adder">
+           <h1>Activities Section!</h1>
+          </div>
+           <button type="button" id="addActivity" onclick="activities()">Add an Activity!</button>
+
+         <!--
            <form class="application" id="3">
              <p>Please enter all extracurricular activites you plan on participating in in the next school year.</p>
                <div id="activity-adder">
+          
                  <input type="text" placeholder ="enter activity"> <br>
                  <p>Hours per week:
                  <select>
@@ -131,7 +139,7 @@
                    <input type = "checkbox" name = "month" value = "November"> November
                    <input type = "checkbox" name = "month" value = "December"> December
                          </p> <br>
-             <button type="button">Add an Activity!</button>
+             <button type="button" id="addActivity" onclick="activities()">Add an Activity!</button>
              </div>
              <div class = "bubbles">
          <div class = "bubble d" id = "3A"></div>
@@ -146,6 +154,7 @@
          <div class = "bubble" id = "3j"></div>
        </div>
          </form>
+         -->
              <form class ="application" id="4">
                <p id="4_0">Question 1: Where did you learn to code? Note: BASIC coding experience is required to tryout</p>
                <input  class = "frq" type ="text" placeholder ="I learned to code at..."> <br>
