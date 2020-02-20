@@ -6,7 +6,7 @@ let list = [];
 function createSides(data, a, r){
   sideFill(data, a, r);
   document.getElementsByClassName("sideItem")[0].classList += " firstItem";
-  document.getElementsByClassName("indicator")[0].innerHTML = (data.length) + " / "+(data.length)+ " Applicants Left";
+  document.getElementsByClassName("indicator")[0].innerHTML = (data.length) + " / "+(data.length + a.length + r.length)+ " Applicants Left";
 }
 //Generates in side bar data, applicants GMAIL is showcased.
 function accept(done){
@@ -33,32 +33,33 @@ function accept(done){
   console.log("hi i exist");
   update(signups, accEmails, rejEmails);
 }
-function update(data, a,r){
-  for(var i = 1; i < document.getElementsByClassName("sideItem").length; i++){
-      document.getElementById("sideBar").removeChild( document.getElementsByClassName("sideItem")[i]);
+function update(onTryouts){
+  var length = document.getElementsByClassName("sideItem").length;
+  for(var i = 1; i < length; i++){
+      document.getElementById("sideBar").removeChild(document.getElementsByClassName("sideItem")[1]);
   }
-  sideFill(data, a, r);
-  document.getElementsByClassName("indicator")[0].innerHTML = (data.length) + " / "+(data.length)+ " Applicants Left";
+  sideFill(onTryouts);
+  document.getElementsByClassName("indicator")[0].innerHTML = (nullApplicants.length) + " / "+(applicants.length)+ " Applicants Left";
 }
-function sideFill(data, a, r){
-  for(var i = 0; i < data.length; i++){
+function sideFill(onTryouts){
+  for(var i = 0; i < signups.length; i++){
     var x = document.createElement("div");
     x.className = "sideItem";
-    x.innerHTML = data[i];
+    x.innerHTML = signups[i];
     list.push(x);
     document.getElementById("sideBar").appendChild(x);
-  }for(var i = 0; i < a.length; i++){
+  }for(var i = 0; i < accepted.length; i++){
     var x = document.createElement("div");
     x.className = "sideItem";
     x.classList += " acceptedStudent";
-    x.innerHTML = a[i];
+    x.innerHTML = accEmails[i];
     list.push(x);
     document.getElementById("sideBar").appendChild(x);
-  }for(var i = 0; i < r.length; i++){
+  }for(var i = 0; i < rejected.length; i++){
     var x = document.createElement("div");
     x.className = "sideItem";
     x.classList += " rejectedStudent";
-    x.innerHTML = r[i];
+    x.innerHTML = rejEmails[i];
     list.push(x);
     document.getElementById("sideBar").appendChild(x);
   }
@@ -72,26 +73,40 @@ function sideFill(data, a, r){
      -Making an updator function for display
   -Making an update() function to update the # of applicants left
 */
+function filter(){
+  signups = [];
+  accEmails = [];
+  rejEmails = [];
+  accepted = [];
+  rejected = [];
+  applicants.forEach((e)=>{
+    if(e.acceptedTEMP!==undefined){
+      if(e.acceptedTEMP){
+        accepted.push(e);
+        var a = (e.gmail.length > 14)?"...":"";
+        accEmails.push((e.gmail).substring(0,14) +a);
+      }else{
+        rejected.push(e);
+        var a = (e.gmail.length > 14)?"...":"";
+        rejEmails.push((e.gmail).substring(0,14) +a);
+      }
+    }else{
+      nullApplicants.push(e);
+      var a = (e.gmail.length > 14)?"...":"";
+      signups.push((e.gmail).substring(0,14) +a);
+    }
+  });
+}
+function loadForm(obj){
+  
+}
 var signups = [];
 var accEmails = [];
 var rejEmails = [];
-var accepted = [{gmail: "HAHAHAHAHAHAHAHA", acceptedTEMP: true},{gmail: "INeverGetRejected@gmail.com",acceptedTEMP: true}];//By default, those with a property acceptedTEMP = true will be accepted
-var rejected = [{gmail: "skdjadwjdwqcjscfeni", acceptedTEMP: false}];//opposite of above
-var nullApplicants = [{gmail: "bob@gmail.com"}, {gmail: "jerry@gmail.com"},{gmail: "john@gmail.com"}] //pass in the applicant objects, @backend that's your job. These are placeholders
-nullApplicants.forEach((e)=>{
-    e.acceptedTEMP = false; // delete this when we integrate a database
-    var a = (e.gmail.length > 14)?"...":"";
-    signups.push((e.gmail).substring(0,14) +a);
-}); //By default, the applicants will be set to not accepted.
-accepted.forEach((e)=>{
-  var a = (e.gmail.length > 14)?"...":"";
-    accEmails.push((e.gmail).substring(0,14)+a);
-    // b = a.substring(0, 10);
-});
-rejected.forEach((e)=>{
-  var a = (e.gmail.length > 14)?"...":"";
-    rejEmails.push((e.gmail).substring(0,14)+a);
-    // b = a.substring(0, 10);
-});
-
+var currentForm = [];
+var applicants = [{gmail: "HAHAHAHAHAHAHAHA", acceptedTEMP: true},{gmail: "INeverGetRejected@gmail.com",acceptedTEMP: true},{gmail: "skdjadwjdwqcjscfeni", acceptedTEMP: false},{gmail: "bob@gmail.com"}, {gmail: "jerry@gmail.com"},{gmail: "john@gmail.com"}];
+var accepted = [];//By default, those with a property acceptedTEMP = true will be accepted
+var rejected = [];//opposite of above
+var nullApplicants = [] //pass in the applicant objects, @backend that's your job. These are placeholders
+filter();
 createSides(signups, accEmails, rejEmails);
