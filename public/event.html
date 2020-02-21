@@ -20,10 +20,28 @@
     <link rel="stylesheet" href="css/event.css">
   </head>
   <body>
+    <div id="workspace">
+      <div class="event">
+        <!--<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSI-Rh_PyihbnK86sXLSUT3aDGJNvu_Gi3UyG94sokP-khw7Mi9">-->
+        <div class="content">
+          <div class="title">CODE CAMP</div>
+          <div class="date">Date: Tue, March 24, 2020</div>
+          <div class="time">Time: 9:00AM-5:00PM PST</div>
+          <div class="location">Location: 16455 Wedgeworth Dr.</div>
+          <div class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo accusamus reiciendis sapiente beatae, praesentium officia! Officiis vitae ea perspiciatis possimus dolore, incidunt modi, libero impedit sed obcaecati velit quo praesentium?</div>
+          <div class = "signUp" onClick="signUp(this)">Sign Up</button>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div id="signUpModal">
+      <div id = "bg">
         <input id="firstName" placeholder="firstname">
         <input id="lastName" placeholder="lastname">
-        <input id="email" placeholder="email">
-        <input id="phoneNumber" type="number" placeholder="phoneNumber">
+        <input id="email" placeholder="name@example.com">
+        <input id="phoneNumber" type="number" placeholder="phonenumber">
         <select id="grade" placeholder="grade">
             <option value="12">12</option>
             <option value="11">11</option>
@@ -38,6 +56,8 @@
             <option value="2">2</option>
             <option value="1">1</option>
         </select>
-        <button id="submit">Submit</button>
+        <button id="submit" onClick="save()">Submit</button>
+    </div>
+    </div>
   </body>
 </html>

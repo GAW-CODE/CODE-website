@@ -1,0 +1,74 @@
+body{
+    padding:0;
+    margin:0;
+    background-color: #f9f9f9;
+}
+#workspace{
+    width: 80%;
+    padding-top: 50vh;
+    margin:auto;
+}
+.event{
+    width:70%;
+    margin:auto;
+    background-color: bisque;
+    padding: 0;
+    border: 1px solid lightgray;
+    border-radius: 0.5em;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSI-Rh_PyihbnK86sXLSUT3aDGJNvu_Gi3UyG94sokP-khw7Mi9");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    margin-bottom: 5vh;
+}
+.content{
+    display: inline-block;
+    background: bisque;
+    margin-left: 30%;
+    vertical-align: top;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    padding-left: 1vw;
+    font-family: Arial;
+    width: 66%;
+    font-size: 0.8vw;
+    weight: 600;
+    color: gray;
+}
+.title{
+    font-size: 1.2vw;
+    font-weight: 900;
+    color: black;
+}
+.desc{
+    font-size: 0.9vw;
+    color: black;
+    padding-top:1vh;  
+}
+.signUp{
+    background-color: #00CED1;
+    border-radius: 0.5em;
+    color: white;
+    padding: 0.5vw;
+    border: none;
+    float: right;
+    font-weight: 900;
+}
+#signUpModal{
+    display: none;
+    width: 100%;
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: rgba(50,50,50,0.5);
+}
+#signUpModal #bg{
+    background-color: coral;
+    z-index: 3;
+    position: absolute;
+    top:20vh;
+    left:30vw;
+    height: 40vh;
+    Width: 40vw;
+}
