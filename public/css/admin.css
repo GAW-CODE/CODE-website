@@ -1,0 +1,99 @@
+body {
+    background-color:  #d9d9d9;
+  margin: 0;
+  font-family: helvetica, arial, sans-serif;
+  background-color:
+}
+.navTitle{
+  display: inline;
+  color: #7165FF;
+  font-size: 3.3em;
+  font-weight: 90;
+}
+nav{
+  background-color: #CEFFFF;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  padding-top: 3vh;
+  height: 13vh;
+  text-align: center;
+}
+h1 {
+  font-style: italic;
+  color: #373fff;
+}
+#eventTab{
+  margin-right: 1vw;
+}
+#sideBar{
+  width: 25vw;
+  background-color: #455377;
+  height: 84vh;
+  margin: 0;
+  padding: 0;
+    user-select: none;
+}
+.sideItem{
+    user-select: none;
+  color: #7165FF;
+  font-size: 1.7em;
+  padding: 1vh;
+  text-align: center;
+  border-bottom: 3px solid #7165FF;
+}
+.activeItem{
+  color: #CEFFFF;
+}
+.firstItem{
+  border-top: 3px solid #7165FF;
+}
+.indicator{
+ color: #CEFFFF; !important
+}
+.acceptedStudent{
+  background-color: #cfc7;
+  color: black;
+}
+.rejectedStudent{
+  color: white;
+  background-color: #80000070;
+}
+#AoE{
+  background-color: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 10px 15px 20px -1px rgba(30,30,30,0.75);
+  -moz-box-shadow: 10px 15px 20px -1px rgba(30,30,30,0.75);
+  box-shadow: 10px 15px 20px -1px rgba(30,30,30,0.75);
+  display: inline;
+  top: 19vh;
+  left: 27.5vw;
+  position: absolute;
+  width: 70vw;
+  height: 77vh;
+  text-align: center;
+    user-select: none;
+}
+.tryButton{
+  border: 0;
+  height: 6vh;
+  width: 10%;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.5em;
+  margin-top: 69vh;
+  user-select: none;
+}
+#accButton{
+  margin-right: 6vw;
+  background-color: #069D1D;
+}
+#accButton:hover{
+  background-color: #08C124;
+}
+#rejButton{
+    background-color: #800000;
+}
+#rejButton:hover{
+  background-color: #8F0000;
+}
