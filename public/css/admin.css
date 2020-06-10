@@ -36,7 +36,7 @@ h1 {
 }
 .sideItem{
     user-select: none;
-  color: #7165FF;
+  color: white;
   font-size: 1.7em;
   padding: 1vh;
   text-align: center;
@@ -46,14 +46,15 @@ h1 {
   color: #CEFFFF;
 }
 .firstItem{
-  border-top: 3px solid #7165FF;
+/*  border-top: 3px solid #7165FF; */
+  background-color: #7165FF;
 }
 .indicator{
- color: #CEFFFF; !important
+ color: #CEFFFF !important;
 }
 .acceptedStudent{
   background-color: #cfc7;
-  color: black;
+  color: white;
 }
 .rejectedStudent{
   color: white;
@@ -72,7 +73,7 @@ h1 {
   width: 70vw;
   height: 77vh;
   text-align: center;
-    user-select: none;
+  user-select: none;
 }
 .tryButton{
   border: 0;
@@ -81,19 +82,32 @@ h1 {
   border-radius: 5px;
   color: white;
   font-size: 1.5em;
-  margin-top: 69vh;
+  vertical-align: bottom;
   user-select: none;
+  display: inline-block;
 }
 #accButton{
-  margin-right: 6vw;
+  margin-right: 35vw;
   background-color: #069D1D;
+  -webkit-box-shadow: -4px 4px 5px 0px rgba(0,84,8,1);
+-moz-box-shadow: -4px 4px 5px 0px rgba(0,84,8,1);
+box-shadow: -4px 4px 5px 0px rgba(0,84,8,1);
 }
 #accButton:hover{
   background-color: #08C124;
+
 }
 #rejButton{
     background-color: #800000;
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(92,0,0,1);
+-moz-box-shadow: 4px 4px 5px 0px rgba(92,0,0,1);
+box-shadow: 4px 4px 5px 0px rgba(92,0,0,1);
 }
 #rejButton:hover{
   background-color: #8F0000;
+}
+/* Doing Form now */
+.studentGmail{
+  color: #7165FF;
+  font-size: 2em;
 }

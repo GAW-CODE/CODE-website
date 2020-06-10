@@ -98,7 +98,22 @@ function filter(){
   });
 }
 function loadForm(obj){
-  
+    //Phase 1—GMAIL
+    var x = document.createElement("div");
+    x.className = "studentGmail";
+    x.innerHTML = obj.gmail;
+    document.getElementById("AoE").appendChild(x);
+    //Last Phase: Getting the Buttons
+    var accButton = document.createElement("div");
+    accButton.innerHTML = "Accept";
+    var rejButton = document.createElement("div");
+    rejButton.innerHTML = "Reject";
+    document.getElementById("AoE").appendChild(accButton);
+    document.getElementById("AoE").appendChild(rejButton);
+    rejButton.id = "rejButton";
+    accButton.id = "accButton";
+    rejButton.className = "tryButton";
+    accButton.className = "tryButton";
 }
 var signups = [];
 var accEmails = [];
@@ -108,5 +123,11 @@ var applicants = [{gmail: "HAHAHAHAHAHAHAHA", acceptedTEMP: true},{gmail: "INeve
 var accepted = [];//By default, those with a property acceptedTEMP = true will be accepted
 var rejected = [];//opposite of above
 var nullApplicants = [] //pass in the applicant objects, @backend that's your job. These are placeholders
+var sampObj = {
+  gmail: "realCoolKid@gmail.com",
+  name: "George Washington",
+  grade: "12",
+}
+loadForm(sampObj);
 filter();
 createSides(signups, accEmails, rejEmails);
